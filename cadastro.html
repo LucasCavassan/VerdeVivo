@@ -8,12 +8,12 @@
 </head>
 <body>
     <header>
-        <h1><em>Conheça nossa organização</em></h1>
+        <h1 class="page-Title"><em class="page-title-text">Trabalhe Conosco</em></h1>
         <nav>
-            <ul>
-            <li><a href="index.html">Início</a></li>
-            <li><a href="cadastro.html">Cadastro Voluntário</a></li>
-            <li><a href="projetoscomunitarios.html">Projetos Comunitários</a></li>
+            <ul >
+            <li ><a href="index.html" class="list-text">Início</a></li>
+            <li><a href="cadastro.html" class="list-text">Cadastro Voluntário</a></li>
+            <li><a href="projetoscomunitarios.html" class="list-text">Projetos Comunitários</a></li>
             </ul>
         </nav>
     </header>
@@ -27,7 +27,7 @@
 
     <section>
         <h2>🌿 Por que fazer parte da VerdeVivo?</h2>
-        <ul>
+        <ul class="list-spacing">
             <li>Você participará de projetos de reflorestamento urbano, educação ambiental e campanhas de conscientização ecológica.</li>
             <li>Terá a oportunidade de aprender, ensinar e crescer junto com pessoas que acreditam em um mesmo propósito.</li>
             <li>Atuará em um ambiente colaborativo, alegre e cheio de energia positiva.</li>
@@ -37,7 +37,7 @@
     <section>
         <h2>🌻 Perfis que buscamos</h2>
         <p>Procuramos pessoas engajadas, criativas e com vontade de agir. Valorizamos profissionais e voluntários de diversas áreas, como:</p>
-        <ul>
+        <ul class="list-spacing">
             <li>Educação e Pedagogia</li>
             <li>Biologia e Engenharia Ambiental</li>
             <li>Comunidade e Marketing Social</li>
@@ -48,10 +48,13 @@
     </section>
 
     <section class="formulário">
-        <main>
+        
+            <div class="formA">
         <h2>🌎 Quer fazer parte?</h2>
-        <p>Envie suas informações e junte-se ao nosso movimento verde!</p>     
-        <p>Preencha o formulário abaixo com:</p>   
+        <p class="form-paragraph">Envie suas informações e junte-se ao nosso movimento verde!</p>     
+        <p class="form-paragraph">Preencha o formulário abaixo com:</p>
+        </div>
+           
         <div class="sucess-message" id="sucess-message">
             Cadastro realizado com sucesso!
         </div>
@@ -80,12 +83,13 @@
 
                 <div class="formgroup">
                 <label for="Área de Interesse">Área de Interesse *</label>           
-                <input type="text" id="Área de Interesse" required>
-                </div>
-
-                </fieldset>
-
-                <fieldset>
+                <select id="Área de Interesse" required>
+                    <option value="">Selecione</option>
+                    <option value="">Jardinagem</option>
+                    <option value="">Educação</option>
+                    <option value="">Marketing</option>
+                </div>         
+                
                 <div class="formgroup">
                 <label for="Disponibilidade de Horário">Disponibilidade de Horário*</label>
                 <select id="Disponibilidade de Horário" name="Disponibilidade de Horário" required>
@@ -94,9 +98,14 @@
                     <option value="">Finais de Semana</option>
                     <option value="">Feriados</option>
                 </div>
-                </fieldset>      
+                        
+                
+                <div class="formgroup">
+                    <input name="submit" type="button">
+                    <button type="submit" value="submit-data">Enviar Dados</button>
+                </div>             
         </form>
-        </main>
+        
     </section>
 
 </body>

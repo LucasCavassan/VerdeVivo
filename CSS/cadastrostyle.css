@@ -8,9 +8,102 @@ body {
     font-size: 22px;
     font-family: 'Segoe UI', 'Segoi UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
+    padding-top: 170px ;
+    background-color: hsl(120, 100%, 70%);
     
 }
 
+/*Cabeçalho*/
 header {
-    background: linear-gradient(135deg, #667eea 0%,);
+    background: hsl(120, 100%, 70%);
+    color: rgb(252, 252, 252);
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    z-index: 1000;
+}
+
+nav {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+nav ul{
+    display: flex;
+    list-style: nome;
+    gap: 2rem;
+    color: rgb(12, 94, 1);
+
+
+}
+
+nav a{
+    color: white;
+    text-decoration: nome;
+    transition: opacity 0.3s;
+    font-weight: 500;
+    opacity: 0.8s;
+}
+
+nav a:hover,
+nav a.active{
+    opacity: 1;
+    font-weight: bold;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+    text-indent: 2em;
+}
+
+
+.logo{
+    font-size: 1.5rem;
+    font-weight: bolder;
+
+}
+
+.formA{
+    background-position: center;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(12, 94, 1);
+    margin-top: 5px;
+    display: block;
+
+}
+
+.page-Title {
+    text-align: center;
+}
+
+
+.list-text {
+     color: rgb(12, 94, 1);
+}
+
+
+.page-title-text {
+    color: rgb(12, 94, 1);
+
+}
+
+.list-spacing {
+    text-align: center;
+}
+
+.form-paragraph {
+    text-align: center;
 }
